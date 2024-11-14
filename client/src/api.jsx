@@ -2,7 +2,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:3000/api", // Adjust to your server's base URL
+  baseURL: "https://spyne-assignment-3.onrender.com/api", // Adjust to your server's base URL
   withCredentials: true,
 });
 
