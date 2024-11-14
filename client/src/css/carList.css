@@ -1,0 +1,92 @@
+/* Overall container for the Car List */
+.car-list-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Styling for each car card */
+.car-card {
+  margin-top: 10px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+/* Styling for the car title */
+.car-card h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Styling for car description */
+.car-card p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* Styling for tags */
+.car-card .tags {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+/* Styling for the search bar */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Container for the images */
+.car-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+/* Styling for each car image */
+.car-image {
+  max-width: 100%;
+  height: auto;
+  width: 200px; /* Adjust width as needed */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+
+
+/* Media query for responsiveness on smaller screens */
+@media (max-width: 768px) {
+  .car-card {
+    padding: 15px;
+  }
+
+  .car-images {
+    gap: 10px;
+  }
+
+  .car-image {
+    width: 150px; /* Smaller image size for mobile */
+  }
+}
