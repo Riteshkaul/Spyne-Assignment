@@ -12,7 +12,7 @@ const app = express();
 dotenv.config();
 app.use(morgan());
 const corsOptions = {
-  origin: "https://carmanagementt.netlify.app/",
+  origin: "https://carmanagementt.netlify.app",
   credentials: true,
   methods: ["GET", "POST", "PUT", "DELETE"],
 };
