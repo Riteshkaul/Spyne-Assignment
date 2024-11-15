@@ -8,6 +8,7 @@ const dotenv = require("dotenv");
 const cookieParser = require("cookie-parser");
 const authMiddleWare = require("./middleware/authMiddleWare.js");
 const carRouter = require("./Routes/carRoutes.js");
+const docRouter = require("./Routes/docRoutes.js");
 const app = express();
 dotenv.config();
 app.use(morgan());
@@ -24,6 +25,7 @@ connectDb();
 
 app.use("/api", authRoutes);
 app.use("/api/car", carRouter);
+app.use("/api/docs", docRouter);
 app.get("/protected", authMiddleWare, (req, res) => {
   res.json({
     message: "This is a protected routed",
